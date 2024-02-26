@@ -28,8 +28,8 @@ const form = document.getElementById('applicationForm');
                 } else {
                     alert('Failed to submit application. Please try again later.');
                 }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Failed to submit application. Please try again later.');
-            }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Failed to submit application. Error:', error);
+                }
         });
