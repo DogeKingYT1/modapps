@@ -1,4 +1,7 @@
 const form = document.getElementById('applicationForm');
+const proxyUrl = 'https://your-vercel-deployment-url/api/proxy.js?url=';
+const webhookUrl = 'https://discord.com/api/webhooks/1211554816036315188/GQxG3AJm1Ptjn5nf_tY_Ajlh6Gx2IcSzwmkVNQpA3IiQX3i9HA9IHNdpG9d68O9kXCH0';
+
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const username = document.getElementById('username').value;
@@ -14,7 +17,7 @@ form.addEventListener('submit', async (e) => {
     };
 
     try {
-        const response = await fetch('https://discord.com/api/webhooks/1211554816036315188/GQxG3AJm1Ptjn5nf_tY_Ajlh6Gx2IcSzwmkVNQpA3IiQX3i9HA9IHNdpG9d68O9kXCH0', {
+        const response = await fetch(proxyUrl + encodeURIComponent(webhookUrl), {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
