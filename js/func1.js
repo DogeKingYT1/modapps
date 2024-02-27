@@ -1,5 +1,5 @@
 // Define the URL for the proxy and the Discord webhook
-const proxyUrl = 'https://modapps.vercel.app/api/proxy.js?url=';
+const proxyUrl = 'https://dogekingyt1.github.io/api/proxy.js?url=';
 const webhookUrl = 'https://discord.com/api/webhooks/1211554816036315188/GQxG3AJm1Ptjn5nf_tY_Ajlh6Gx2IcSzwmkVNQpA3IiQX3i9HA9IHNdpG9d68O9kXCH0';
 
 // Function to submit the form data
