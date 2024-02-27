@@ -1,5 +1,5 @@
 const form = document.getElementById('applicationForm');
-const proxyUrl = 'https://your-vercel-deployment-url/api/proxy.js?url=';
+const proxyUrl = 'https://modapps.vercel.app/api/proxy.js?url=';
 const webhookUrl = 'https://discord.com/api/webhooks/1211554816036315188/GQxG3AJm1Ptjn5nf_tY_Ajlh6Gx2IcSzwmkVNQpA3IiQX3i9HA9IHNdpG9d68O9kXCH0';
 
 form.addEventListener('submit', async (e) => {
