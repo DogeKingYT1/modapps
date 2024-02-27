@@ -1,10 +1,10 @@
-// api/proxy.js
-
 const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
     const { url } = req.query;
     const { method, headers, body } = req;
+
+    console.log('Incoming request:', { url, method, headers, body });
 
     try {
         const response = await fetch(url, {
@@ -14,6 +14,7 @@ module.exports = async (req, res) => {
         });
 
         const responseData = await response.json();
+        console.log('Proxy response:', { status: response.status, data: responseData });
         res.status(response.status).json(responseData);
     } catch (error) {
         console.error('Error:', error);
