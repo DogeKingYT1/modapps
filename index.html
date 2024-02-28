@@ -13,16 +13,34 @@
     <div class="container">
         <img src="imgs/discord_icon.png" class="discord-icon">
         <h1>Apply for Moderator</h1>
-        <p>⚠ Site non-functional! ⚠</p>
         <form id="applicationForm">
-            <label for="username">Discord Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="discordUsername">Discord Username: (e.g: @example)</label>
+            <input type="text" id="discordUsername" name="discordUsername" required>
+
+            <label for="robloxUsername">Roblox Username: (e.g: @example)</label>
+            <input type="text" id="robloxUsername" name="robloxUsername" required>
+
             <label for="reason">Reason for applying:</label>
             <textarea id="reason" name="reason" rows="4" required></textarea>
+
             <label for="experience">Experience (if any):</label>
             <textarea id="experience" name="experience" rows="4"></textarea>
+
             <label for="additionalInfo">Additional Information:</label>
             <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+
+            <label for="age">How old are you?</label>
+            <input type="text" id="age" name="age">
+
+            <label for="whyYou">Why should we pick you?</label>
+            <textarea id="whyYou" name="whyYou" rows="4" required></textarea>
+
+            <label for="howLong">How long have you been in the server?</label>
+            <input type="text" id="howLong" name="howLong">
+
+            <label for="aknowledged-rules">By checking this checkbox, You aknowledge that if you break our rules or lied on this application you will be declined.</label>
+            <input type="checkbox" id="aknowledgedRules" name="aknowledgedRules" class="checkbox" required>
+
             <button type="submit">Submit Application</button>
         </form>
     </div>
